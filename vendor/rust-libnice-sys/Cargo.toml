@@ -1,0 +1,19 @@
+[package]
+name = "libnice-sys"
+version = "0.4.0"
+authors = ["Jonas Herzig <me@johni0702.de>"]
+edition = "2021"
+links = "nice"
+description = "Rust FFI bindings to libnice, automatically generated with bindgen."
+license = "LGPL-2.1 OR MPL-1.1"
+repository = "https://github.com/johni0702/rust-libnice-sys"
+
+[dependencies]
+gio-sys = "0.10"
+gobject-sys = "0.10"
+glib-sys = "0.10"
+libc = "0.2"
+
+[build-dependencies]
+bindgen = "0.70"
+pkg-config = "0.3"

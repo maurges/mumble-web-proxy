@@ -1,0 +1,20 @@
+[package]
+name = "libnice"
+version = "0.3.0"
+authors = ["Jonas Herzig <me@johni0702.de>"]
+edition = "2018"
+description = "Safe, high-level Rust bindings to libnice."
+license = "LGPL-2.1 OR MPL-1.1"
+repository = "https://github.com/johni0702/rust-libnice"
+
+[dependencies]
+libnice-sys = { path = "../rust-libnice-sys" }
+libc = "0.2"
+glib-sys = "0.10"
+gobject-sys = "0.10"
+glib = "0.10"
+futures = "0.3"
+webrtc-sdp = "0.3"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["rt"] }
