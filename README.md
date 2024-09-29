@@ -1,5 +1,9 @@
 # mumble-web-proxy
 
+> This fork fixes build issues with 2024 system libs (mainly clang). It also adds
+> a nix derivation and a nix flake with a lockfile, so the same environment can
+> be reproduced in the future.
+
 mumble-web-proxy is a [Mumble] to WebSocket+WebRTC proxy.
 
 The Mumble protocol uses TCP for control and UDP for voice.
