@@ -1,7 +1,7 @@
 // FIXME: saveguard against two-time pad by running replay-protection on outgoing packets
 use fixedbitset::FixedBitSet;
 use handy_async::sync_io::{ReadExt, WriteExt};
-use num::{BigUint, Integer};
+use num::BigUint;
 use std::borrow::Cow;
 use std::collections::BTreeMap;
 use std::io::{Read, Write};
